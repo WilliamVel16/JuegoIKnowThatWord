@@ -166,7 +166,7 @@ public class GUI extends JFrame {
         panelPalabras.setFocusable(true);
         panelPalabras.requestFocusInWindow();
 
-       /* panelPuntajeUsuario = new JPanel();
+        panelPuntajeUsuario = new JPanel();
         panelPuntajeUsuario.setPreferredSize((new Dimension(200, 50)));
         panelPuntajeUsuario.setBackground(new Color(255, 255, 255, 0));
         panelPuntajeUsuario.setBorder(BorderFactory.createTitledBorder("Tu puntaje"));
@@ -175,7 +175,7 @@ public class GUI extends JFrame {
         constraints.gridwidth = 1;
         constraints.fill = GridBagConstraints.BOTH;
         constraints.anchor = GridBagConstraints.CENTER;
-        this.add(panelPuntajeUsuario, constraints);*/
+        this.add(panelPuntajeUsuario, constraints);
 
         panelNivelUsuario = new JPanel();
         panelNivelUsuario.add(nivelUsuario, constraints);

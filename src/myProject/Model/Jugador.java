@@ -45,6 +45,9 @@ public class Jugador {
      */
     public void pedirDatos() {
         String userNameInput = JOptionPane.showInputDialog("Ingrese su nombre: ");
+        while(userNameInput.contains(" ")){
+            userNameInput = JOptionPane.showInputDialog("Ingrese un nombre sin espacios: ");
+        }
         this.nombreJugador = userNameInput;
     }
 

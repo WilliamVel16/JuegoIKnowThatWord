@@ -77,7 +77,9 @@ public class FileManager {
             String line = input.readLine();
             while (line != null) {
                 String parts[] = line.split(" ");
-                Players.put(parts[0], Integer.parseInt(parts[1]));
+                if(parts.length == 2) { //solamente se admite nombre de usuario y nivel
+                    Players.put(parts[0], Integer.parseInt(parts[1]));
+                }
                 line = input.readLine();
             }
         } catch (FileNotFoundException e) {
